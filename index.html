@@ -44,16 +44,18 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Technologies</a>
+              <a class="nav-link" href="#technologies">Technologies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="resume" href="#">Resume</a>
@@ -107,67 +109,150 @@
         </div>
       </div>
     </header>
-    <section id="about" class="d-flex align-items-center">
-      <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="about__content col-6">
-            <div class="pb-3">
-              <i class="fas fa-user-graduate icon"></i>
-              <h2>About Me</h2>
+    <main>
+      <section id="about" class="d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="about__content col-6">
+              <div class="pb-3">
+                <i class="fas fa-user-graduate icon"></i>
+                <h2>About Me</h2>
+              </div>
+              <p>
+                Hello! This is Akram Mohamed, a 23-year-old fresh graduate from
+                Information Technology Institute (ITI). My passion with mobile
+                app development started since 2018 in college, which is by the
+                way the Faculty of Petroleum and Mining Engineering, I started
+                to develop android apps using java with a volunteering team of
+                students and since then I'm a big fan of it.
+              </p>
+              <p>
+                Today, after I've learnt flutter and web frameworks in ITI, I've
+                built some apps and websites, dealt with mongodb, sqlite and
+                firebase databases, fetched data from RESTful APIs, used
+                architictural design patterns like MVVM, worked with different
+                state managements like provider, bloc and redux, persisted cache
+                and user preferences in local storage, so I can now build
+                whatever app or website needed.
+              </p>
             </div>
-            <p>
-              Hello! This is Akram Mohamed, a 23-year-old fresh graduate from
-              Information Technology Institute (ITI). My passion with mobile app
-              development started since 2018 in college, which is by the way the
-              Faculty of Petroleum and Mining Engineering, I started to develop
-              android apps using java with a volunteering team of students and
-              since then I'm a big fan of it.
-            </p>
-            <p>
-              Today, after I've learnt flutter and web frameworks in ITI, I've
-              built some apps and websites, dealt with mongodb, sqlite and
-              firebase databases, fetched data from RESTful APIs, used
-              architictural design patterns like MVVM, worked with different
-              state managements like provider, bloc and redux, persisted cache
-              and user preferences in local storage, so I can now build whatever
-              app or website needed.
-            </p>
+            <img
+              src="./imgs/Resume-bro.svg"
+              class="offset-1 col-5 pt-4"
+              alt=""
+            />
           </div>
-          <img src="./imgs/Resume-bro.svg" class="offset-1 col-5 pt-4" alt="" />
         </div>
-      </div>
-    </section>
-    <section id="technologies">
-      <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-6">
-            <div class="pb-3">
-              <i class="fas fa-cubes icon"></i>
-              <h2>Technologies</h2>
-            </div>
-            <p>
-              Here are some programming langauges, frameworks, libraries,
-              concepts and databases that I can work with:
-            </p>
-            <div class="m-0 technologies__list d-flex flex-wrap">
-              <a>Dart</a><a>Flutter</a><a>JavaScript (ES6+)</a><a>React</a
-              ><a>React-Native</a><a>Angular</a><a>Node.js</a><a>Express.js</a
-              ><a>Firebase</a><a>SQLite</a><a>MongoDB</a><a>GIT</a><a>Agile</a>
-              <a>NPM</a><a>Webpack</a> <a>Unit Testing</a><a>Redux</a
-              ><a>State Management</a><a>Material Design</a><a>MVVM</a
-              ><a>HTML5</a> <a>CSS3/SASS</a><a>Bootstrap</a><a>jQuery</a
-              ><a>Responsive Layouts</a>
+      </section>
+      <section id="technologies">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <img
+              src="./imgs/developer-activity-animate-01.svg"
+              class="col-5 pt-4"
+              alt=""
+              loading="lazy"
+            />
+            <div class="offset-1 col-6">
+              <div class="pb-3">
+                <i class="fas fa-cubes icon"></i>
+                <h2>Technologies</h2>
+              </div>
+              <p>
+                Here are some programming langauges, frameworks, libraries,
+                concepts and databases that I can work with:
+              </p>
+              <div class="m-0 technologies__list d-flex flex-wrap">
+                <a>Dart</a><a>Flutter</a><a>JavaScript (ES6+)</a><a>React</a
+                ><a>React-Native</a><a>Angular</a><a>Node.js</a><a>Express.js</a
+                ><a>Firebase</a><a>SQLite</a><a>MongoDB</a><a>GIT</a
+                ><a>Agile</a> <a>NPM</a><a>Webpack</a> <a>Unit Testing</a
+                ><a>Redux</a><a>State Management</a><a>Material Design</a
+                ><a>MVVM</a><a>HTML5</a> <a>CSS3/SASS</a><a>Bootstrap</a
+                ><a>jQuery</a><a>Responsive Layouts</a>
+              </div>
             </div>
           </div>
-          <img
-            src="./imgs/developer-activity-animate-01.svg"
-            class="offset-1 col-5 pt-4"
-            alt=""
-            loading="lazy"
-          />
         </div>
+      </section>
+      <section id="projects">
+        <div class="container">
+          <div class="mb-4">
+            <i class="fas fa-mobile-alt icon"></i>
+            <h2>Projects</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <img src="./imgs/telemed1.png" class="right-fade" alt="" />
+              <img src="./imgs/telemed2.png" class="right-fade-next" alt="" />
+            </div>
+            <div class="col-6">
+              <h3 class="p-0 w-100">Telemed (Team App)</h3>
+              <div class="d-flex align-items-center my-2">
+                <i class="fas fa-angle-double-right fa-1x"></i>
+                <h4 class="d-inline-block mb-0 mx-2">Summary</h4>
+              </div>
+
+              <p>
+                This app is made as an ITI graduation project with a team of 4
+                members, this app is an online medical consultation app that can
+                establish and schedule voice and video call meetings between
+                patients and doctors, it also has medical and nutritional blogs,
+                news feed, drug index and a drug reminder.
+              </p>
+              <div class="d-flex align-items-center mt-2 mb-3">
+                <i class="fas fa-angle-double-right fa-1x"></i>
+                <h4 class="d-inline-block mb-0 mx-2">Technologies Used</h4>
+              </div>
+              <div class="m-0 technologies__used d-flex flex-wrap">
+                <a>Flutter</a><a>Firebase (Real-time)</a><a>NodeJS</a
+                ><a>Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <h2>Medical App</h2>
+              <h3>Summary</h3>
+
+              <h3>Technologies Used</h3>
+            </div>
+            <img
+              src="./imgs/mogo_website.png"
+              style="object-fit: cover; height: 500px"
+              alt=""
+              class="col-6"
+            />
+          </div>
+          <div class="row">
+            <img
+              src="./imgs/10-iphone-apps-overcast-100783488-large.jpg"
+              alt=""
+              class="col-6"
+            />
+            <div class="col-6">
+              <h2>Medical App</h2>
+              <h3>Summary</h3>
+              <h3>Technologies Used</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="container text-center">
+        <h2>What's Next?</h2>
+        <h1>Get In Touch</h1>
+        <p class="w-75 text-center m-auto my-4">
+          My inbox is always open for anyone to contact me, whether for a job or
+          you have a question, I will reply to you instantly. Thank you for
+          visiting my portfolio.
+        </p>
+        <button onclick="email()">Send Email</button>
       </div>
-    </section>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
