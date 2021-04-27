@@ -1,9 +1,24 @@
-window.onload = ()=> {
-    console.log(window.innerHeight);
+window.onload = () => {
+    let splides = document.getElementsByClassName('splide');
+    new Splide(splides[0], {
+        rewind: true,
+        perPage: 3,
+        perMove: 1,
+        autoplay: true,
+      }).mount();
+      new Splide(splides[1], {
+        rewind: true,
+        perPage: 3,
+        perMove: 1,
+        autoplay: true,
+      }).mount();
 }
+
 email = () => {
 window.location.href = "mailto:akram.mohamed.dev@gmail.com";
 }
+
+
 
 let navbar = document.getElementById('navbar');
 let fadeImg = document.getElementsByClassName('right-fade');
