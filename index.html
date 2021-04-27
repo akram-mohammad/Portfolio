@@ -17,6 +17,10 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
     <link rel="stylesheet" href="./style.min.css" />
   </head>
   <body>
@@ -85,7 +89,9 @@
               well-structured code applying the best practices and design
               patterns, working within a team with a daily progress reporting.
             </p>
-            <button href="" class="touch">Get In Touch</button>
+            <button href="" class="touch" onclick="email()">
+              Get In Touch
+            </button>
           </div>
           <a class="offset-2 col-4 d-flex justify-content-center">
             <img src="./imgs/Profile.webp" alt="Profile Picture"
@@ -181,11 +187,102 @@
             <i class="fas fa-mobile-alt icon"></i>
             <h2>Projects</h2>
           </div>
-
+          <div class="modal" id="modal-one">
+            <div class="modal-bg modal-exit"></div>
+            <div class="modal-container"></div>
+          </div>
           <div class="row">
             <div class="col-6">
-              <img src="./imgs/telemed1.png" class="right-fade" alt="" />
-              <img src="./imgs/telemed2.png" class="right-fade-next" alt="" />
+              <div class="splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <img
+                      src="./imgs/telemed0.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                    <img
+                      src="./imgs/telemed1.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                    <img
+                      src="./imgs/telemed2.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                    <img
+                      src="./imgs/telemed6.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                    <img
+                      src="./imgs/telemed3.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                    <img
+                      src="./imgs/telemed4.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                    <img
+                      src="./imgs/telemed5.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                    <img
+                      src="./imgs/telemed8.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                    <img
+                      src="./imgs/telemed7.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                    <img
+                      src="./imgs/telemed9.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                    <img
+                      src="./imgs/telemed10.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                    <img
+                      src="./imgs/telemed11.png"
+                      class="right-fade splide__slide"
+                      alt=""
+                      data-modal="modal-one"
+                      onclick="openImg(this.src)"
+                    />
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="col-6">
               <h3 class="p-0 w-100">Telemed (Team App)</h3>
@@ -207,7 +304,15 @@
               </div>
               <div class="m-0 technologies__used d-flex flex-wrap">
                 <a>Flutter</a><a>Firebase (Real-time)</a><a>NodeJS</a
-                ><a>Github</a>
+                ><a>Provider</a><a>Github</a>
+              </div>
+              <div class="my-3">
+                <a href="https://github.com/AhmedElbasha97/medicalkhealth-care"
+                  ><i class="fab fa-github fa-2x mx-2"></i
+                ></a>
+                <a href="https://telemedapp.netlify.app/"
+                  ><i class="fas fa-external-link-alt fa-2x"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -258,6 +363,15 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+      new Splide(".splide", {
+        rewind: true,
+        perPage: 3,
+        perMove: 1,
+        autoplay: true,
+      }).mount();
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

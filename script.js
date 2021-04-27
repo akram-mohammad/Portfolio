@@ -2,7 +2,7 @@ window.onload = ()=> {
     console.log(window.innerHeight);
 }
 email = () => {
-window.location.href = "mailto:address@mail.com?body=mail+body";
+window.location.href = "mailto:akram.mohamed.dev@gmail.com";
 }
 
 let navbar = document.getElementById('navbar');
@@ -24,3 +24,28 @@ window.onscroll = () => {
         }
     }
 }
+
+var modals = document.querySelectorAll('[data-modal]');
+var node = document.createElement('img');
+
+function openImg(src) {
+    node.src = src;
+    node.setAttribute('data-modal',"modal-one");
+    node.style.width = `300px`;
+}
+
+modals.forEach(function(trigger) {
+  trigger.addEventListener('click', function(event) {
+    event.preventDefault();
+    var modal = document.getElementById(trigger.dataset.modal);
+    modal.classList.add('open');
+    var modalContainer = modal.querySelector('.modal-container');
+    modalContainer.appendChild(node);
+    var exit = modal.querySelector('.modal-exit');
+      exit.addEventListener('click', function(event) {
+        event.preventDefault();
+        modal.classList.remove('open');
+      });
+  });
+});
+
