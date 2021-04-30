@@ -7,6 +7,12 @@ window.onload = () => {
             perMove: 1,
             autoplay: true,
             breakpoints: {
+                1199: {
+                    perPage: 2,
+                },
+                991: {
+                    perPage: 3,
+                },
                 575: {
                     perPage: 2,
                 },
